@@ -39,6 +39,8 @@ dependencies:
   hive: ^2.2.3
   animated_text_kit: ^4.2.2
   google_fonts: ^3.0.1
+  fl_chart: ^0.55.0
+  flutter_svg: ^1.1.1+1
 dev_dependencies:
   flutter_test:
     sdk: flutter

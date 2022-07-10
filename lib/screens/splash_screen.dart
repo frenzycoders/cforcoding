@@ -54,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   alignment: Alignment.center,
                   child: DefaultTextStyle(
                     style: GoogleFonts.firaSans(
-                      fontSize: 43,
+                      fontSize: width > 360 ? 43 : 30,
                       color: Colors.black,
                     ),
                     child: AnimatedTextKit(
@@ -85,13 +85,14 @@ class _SplashScreenState extends State<SplashScreen> {
                     'BE',
                     style: GoogleFonts.firaCode(
                       color: Colors.indigo.shade400,
-                      fontSize: 30,
+                      fontSize: width > 360 ? 30 : 23,
                     ),
                   ),
-                  const SizedBox(width: 20.0, height: 80.0),
+                  SizedBox(width: width > 360 ? 10.0 : 8, height: 80.0),
                   DefaultTextStyle(
                     style: GoogleFonts.firaSans(
-                        fontSize: 30, color: Colors.red.withOpacity(0.7)),
+                        fontSize: width > 360 ? 30 : 23,
+                        color: Colors.red.withOpacity(0.7)),
                     child: AnimatedTextKit(
                       repeatForever: true,
                       animatedTexts: [
